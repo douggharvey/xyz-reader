@@ -1,5 +1,0 @@
-<resources>
-    <declare-styleable name="DELETEDrawInsetsFrameLayout">
-        <attr name="insetBackground" format="color|reference" />
-    </declare-styleable>
-</resources>
