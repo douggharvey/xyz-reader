@@ -29,7 +29,7 @@ import android.widget.FrameLayout;
 import com.example.xyzreader.R;
 
 
-public class DrawInsetsFrameLayout extends FrameLayout {
+public class DELETEDrawInsetsFrameLayout extends FrameLayout {
     private Drawable mInsetBackground;
     private Drawable mTopInsetBackground;
     private Drawable mBottomInsetBackground;
@@ -39,27 +39,27 @@ public class DrawInsetsFrameLayout extends FrameLayout {
     private Rect mTempRect = new Rect();
     private OnInsetsCallback mOnInsetsCallback;
 
-    public DrawInsetsFrameLayout(Context context) {
+    public DELETEDrawInsetsFrameLayout(Context context) {
         super(context);
         init(context, null, 0);
     }
 
-    public DrawInsetsFrameLayout(Context context, AttributeSet attrs) {
+    public DELETEDrawInsetsFrameLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs, 0);
     }
 
-    public DrawInsetsFrameLayout(Context context, AttributeSet attrs, int defStyle) {
+    public DELETEDrawInsetsFrameLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(context, attrs, defStyle);
     }
 
     private void init(Context context, AttributeSet attrs, int defStyle) {
         final TypedArray a = context.obtainStyledAttributes(attrs,
-                R.styleable.DrawInsetsFrameLayout, defStyle, 0);
+                R.styleable.DELETEDrawInsetsFrameLayout, defStyle, 0);
         assert a != null;
 
-        mInsetBackground = a.getDrawable(R.styleable.DrawInsetsFrameLayout_insetBackground);
+        mInsetBackground = a.getDrawable(R.styleable.DELETEDrawInsetsFrameLayout_insetBackground);
 
         a.recycle();
     }

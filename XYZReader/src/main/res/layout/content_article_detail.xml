@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ui.ArticleDetailActivity2"
-    tools:showIn="@layout/activity_article_detail2">
+    tools:context=".ui.ArticleDetailActivity"
+    tools:showIn="@layout/fragment_article_detail">
 <!-- copied from fragment_article_detail.xml then changed -->
     <LinearLayout
         android:layout_width="match_parent"

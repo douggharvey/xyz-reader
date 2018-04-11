@@ -28,6 +28,13 @@
         <activity
             android:name=".ui.ArticleDetailActivity"
             android:parentActivityName=".ui.ArticleListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.example.xyzreader.items" />
+            </intent-filter>
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -43,22 +50,6 @@
             android:authorities="com.example.xyzreader"
             android:exported="false" />
 
-        <activity
-            android:name=".ui.ArticleDetailActivity2"
-            android:label="@string/title_activity_article_detail2"
-            android:parentActivityName=".ui.ArticleListActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.example.xyzreader.items" />
-            </intent-filter>
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.xyzreader.ui.ArticleListActivity" />
-        </activity>
     </application>
 
 </manifest>
